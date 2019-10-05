@@ -6,6 +6,9 @@ func countUniqueValue(a []int) int {
 	var i int
 	i = 0
 	lena := len(a)
+	if lena == 0 {
+		return 0
+	}
 	for j := 1; j < lena; j++ {
 		if a[i] != a[j] {
 			i++
