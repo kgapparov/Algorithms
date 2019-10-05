@@ -1,4 +1,4 @@
-#Muly Pointer approach 
+# Muly Pointer approach 
 ## Task 
 Write the function wich will return from givenn array pair of elements in summs will equal as given in argument.  
 all elements in array are sorted and can be negative numbers.
