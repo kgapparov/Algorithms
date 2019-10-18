@@ -6,6 +6,12 @@ type node struct {
 	val  string
 	next *node
 }
+
+func (n *node) new(i string) {
+	n.val = i
+	n.next = nil
+}
+
 type singleLinkedList struct {
 	head, tail *node
 	length     int
@@ -140,10 +146,6 @@ func (sll *singleLinkedList) reverse() {
 		prev = current
 		current = next
 	}
-}
-func (n *node) new(i string) {
-	n.val = i
-	n.next = nil
 }
 
 func main() {
